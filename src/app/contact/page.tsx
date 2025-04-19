@@ -1,82 +1,9 @@
 'use client';
-
-import { useState } from 'react';
-
 export default function ContactPage() {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: ''
-  // });
-
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
-
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   console.log('Form submitted:', formData);
-  //   // TODO: Integrate with EmailJS / backend API here
-  //   alert('Thank you for contacting us!');
-  //   setFormData({ name: '', email: '', message: '' });
-  // };
+ 
 
   return (
-    // <div classNameName="max-w-4xl mx-auto px-4 py-16 ">
-    //   <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-    //   <p className="text-lg text-gray-600 mb-10">
-    //     Have a question, feedback, or collaboration idea? We’d love to hear from you.
-    //     Fill out the form below and we’ll get back to you as soon as possible.
-    //   </p>
-
-    //   <form onSubmit={handleSubmit} className="space-y-6">
-    //     <div>
-    //       <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your Name</label>
-    //       <input
-    //         type="text"
-    //         name="name"
-    //         id="name"
-    //         required
-    //         value={formData.name}
-    //         onChange={handleChange}
-    //         className="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-    //       />
-    //     </div>
-
-    //     <div>
-    //       <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
-    //       <input
-    //         type="email"
-    //         name="email"
-    //         id="email"
-    //         required
-    //         value={formData.email}
-    //         onChange={handleChange}
-    //         className="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-    //       />
-    //     </div>
-
-    //     <div>
-    //       <label htmlFor="message" className="block text-sm font-medium text-gray-700">Your Message</label>
-    //       <textarea
-    //         name="message"
-    //         id="message"
-    //         rows={5}
-    //         required
-    //         value={formData.message}
-    //         onChange={handleChange}
-    //         className="mt-1 block w-full border border-gray-300 rounded-lg px-4 py-2 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-    //       ></textarea>
-    //     </div>
-
-    //     <button
-    //       type="submit"
-    //       className="inline-flex items-center px-6 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
-    //     >
-    //       Send Message
-    //     </button>
-    //   </form>
-    // </div>
+   
     <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#045e52] rounded-lg">
       <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4">
         <div>
