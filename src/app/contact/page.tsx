@@ -3,23 +3,23 @@
 import { useState } from 'react';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // TODO: Integrate with EmailJS / backend API here
-    alert('Thank you for contacting us!');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  //   // TODO: Integrate with EmailJS / backend API here
+  //   alert('Thank you for contacting us!');
+  //   setFormData({ name: '', email: '', message: '' });
+  // };
 
   return (
     // <div classNameName="max-w-4xl mx-auto px-4 py-16 ">
