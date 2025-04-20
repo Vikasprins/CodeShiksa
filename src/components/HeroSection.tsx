@@ -1,5 +1,4 @@
 "use client";
-import colors from "@/constants/colors";
 import Image from "next/image";
 import herogirl1 from "public/herogirl1.png"
 
@@ -16,7 +15,7 @@ const HeroSection = () => {
           Learn full-stack web development with MERN Stack and level up your career.
         </p>
         <button
-          className="mt-6 px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-highlight hover:text-white transition-all"
+          className="mt-6 px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all"
         >
           Get Started
         </button>
