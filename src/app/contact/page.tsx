@@ -76,7 +76,7 @@ export default function ContactPage() {
         </div>
 
         <div className="bg-gray-200 p-6 rounded-lg">
-          <p className="text-sm font-semibold text-slate-900">I'm interested in...</p>
+          <p className="text-sm font-semibold text-slate-900">I am interested in...</p>
 
           <div className="space-y-4 max-lg:mt-4">
             <button type="button" className="px-4 py-2 rounded-lg bg-[#045e52] text-white text-sm tracking-wider font-medium outline-none border-2  mr-4">Web design</button>

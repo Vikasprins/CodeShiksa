@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { FaSearch, FaGithub } from "react-icons/fa";
 
@@ -74,9 +75,8 @@ export default function ProjectLibraryPage() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3 py-1 rounded-full border text-sm cursor-pointer hover:bg-white hover:text-black ${
-                selectedCategory === cat ? "bg-[#045e52] text-white" : "bg-[#045e52] text-white"
-              }`}
+              className={`px-3 py-1 rounded-full border text-sm cursor-pointer hover:bg-white hover:text-black ${selectedCategory === cat ? "bg-[#045e52] text-white" : "bg-[#045e52] text-white"
+                }`}
             >
               {cat}
             </button>
@@ -98,7 +98,13 @@ export default function ProjectLibraryPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project, index) => (
           <div key={index} className="bg-white rounded-xl shadow-sm border overflow-hidden cursor-pointer">
-            <img src={project.image} alt={project.title} className="w-full h-40 object-cover" />
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={500}
+              height={300}
+              className="w-full h-40 object-cover"
+            />
             <div className="p-4">
               <span className="text-xs px-2 py-1 bg-[#045e52] rounded-full text-white">{project.category}</span>
               <h3 className="font-semibold mt-2">{project.title}</h3>
