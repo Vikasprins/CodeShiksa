@@ -1,10 +1,7 @@
-"use client";
+// app/page.tsx or app/home/page.tsx
+
 import React from "react";
 
-// import { cn } from "@/lib/utils";
-// import { Boxes } from "@/components/ui/background-boxes";
-// import Image from "next/image";
-// import first from "public/first.webp"
 import PopularTopics from "@/components/PopularTopics";
 import PopularCourses from "@/components/PopularCourses";
 import PopularProjects from "@/components/PopularProjects";
@@ -12,13 +9,13 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MentorSection from "@/components/MentorSection";
 import WhatYouLookingFor from "@/components/WhatYouLookingFor";
-export function BackgroundBoxesDemo() {
+
+export default function HomePage() {
   return (
     <>
       <div>
         <HeroSection />
       </div>
-    
       <div>
         <PopularTopics />
       </div>
@@ -38,7 +35,5 @@ export function BackgroundBoxesDemo() {
         <Footer />
       </div>
     </>
-
   );
 }
-export default BackgroundBoxesDemo
