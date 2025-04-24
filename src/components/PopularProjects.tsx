@@ -98,7 +98,7 @@ const PopularProjects: React.FC = () => {
       <div className="text-center mt-8">
         <button 
         onClick={() => router.push("/projects")}
-        className="bg-white text-black px-8 py-2 rounded-lg font-semibold hover:bg-blue-700 transition cursor-pointer">
+        className="bg-white text-black px-8 py-2 rounded-lg font-semibold hover:bg-green-950 hover:text-white transition cursor-pointer">
           Explore All Projects
         </button>
       </div>

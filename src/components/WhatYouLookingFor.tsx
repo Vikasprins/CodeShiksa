@@ -29,7 +29,7 @@ const WhatYouLookingFor: FC = () => {
               Our dynamic educational platform offers you the tools supportive community.
             </p>
             <Link href="/teach">
-              <button className="mt-2 px-5 py-2 bg-white text-[#045e52] rounded hover:bg-gray-800 transition">
+              <button className="mt-2 px-5 py-2 bg-white text-[#045e52] rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
                 Get started
               </button>
             </Link>
@@ -45,7 +45,7 @@ const WhatYouLookingFor: FC = () => {
               Our dynamic educational platform offers you the tools supportive community.
             </p>
             <Link href="/learn">
-              <button className="mt-2 px-5 py-2 bg-white text-teal-900 font-semibold rounded hover:bg-gray-100 transition">
+              <button className="mt-2 px-5 py-2 bg-white text-teal-900 font-semibold rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
                 Enroll Now
               </button>
             </Link>

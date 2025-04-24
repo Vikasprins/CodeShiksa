@@ -98,11 +98,11 @@ const Page = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Internship In Hisar
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
             Your First Step Into Tech
           </h2>
-          <Link href="/join">
-            <button className="mt-4 px-6 py-2 bg-white text-black rounded-lg hover:bg-orange-700 transition">
+          <Link href="/contact">
+            <button className="mt-4 px-6 py-2 bg-white text-black rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
               Join Us
             </button>
           </Link>
@@ -150,7 +150,7 @@ const Page = () => {
             <li>✅ College students who are pursuing IT or any other degree</li>
           </ul>
 
-          <button className="mt-6 px-6 py-2 bg-[#045e52] text-white rounded-lg hover:bg-orange-700 transition">
+          <button className="mt-6 px-6 py-2 bg-[#045e52] text-white rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
             Reach Us
           </button>
         </div>
@@ -182,14 +182,14 @@ const Page = () => {
                 </ul>
                 <p className="mt-3 font-medium">Duration: {program.duration}</p>
               </div>
-              <button className="mt-4 w-fit px-4 py-2 bg-[#045e52] text-white rounded hover:bg-orange-600 transition">
+              <button className="mt-4 w-fit px-4 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
                 Apply Now
               </button>
             </div>
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <button className="px-6 py-2 bg-[#045e52] text-white rounded hover:bg-orange-700 transition">
+          <button className="px-6 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
             Unlock Free
           </button>
         </div>

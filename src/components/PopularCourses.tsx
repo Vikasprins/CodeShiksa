@@ -108,7 +108,7 @@ const PopularCourses: React.FC = () => {
       <div className="text-center mt-8">
         <button
           onClick={() => router.push("/courses")}
-          className="bg-[#045e52] text-white px-6 py-2 rounded-lg font-medium hover:bg-white hover:text-[#045e52] transition cursor-pointer">
+          className="bg-[#045e52] text-white px-6 py-2 rounded-lg font-medium hover:bg-green-950 hover:text-white transition cursor-pointer">
           Explore All Courses
         </button>
       </div>
