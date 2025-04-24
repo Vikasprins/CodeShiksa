@@ -41,12 +41,12 @@ const LoginPage = () => {
     <div>
       <section className="bg-[#045e52] dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a
+          <Link
             href="/"
             className="flex items-center mb-6 text-3xl font-bold text-white"
           >
             Code Shiksa
-          </a>
+          </Link>
           <div className="w-full bg-white rounded-lg shadow sm:max-w-md xl:p-0 dark:bg-gray-800">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">
@@ -104,12 +104,12 @@ const LoginPage = () => {
                       Remember me
                     </label>
                   </div>
-                  <a
+                  <Link
                     href="#"
                     className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
 
                 <button
