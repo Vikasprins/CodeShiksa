@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaSearch, FaGithub } from "react-icons/fa";
 
@@ -8,6 +9,7 @@ const categories = ["All", "Web Development", "Full Stack", "Productivity", "Ana
 
 const projects = [
   {
+    id: 1,
     title: "Weather Dashboard App",
     category: "Web Development",
     level: "Beginner",
@@ -15,6 +17,7 @@ const projects = [
     description: "A responsive weather application with real-time updates and 5-day forecast visualization.",
   },
   {
+    id: 2,
     title: "Advanced Calculator",
     category: "Web Development",
     level: "Intermediate",
@@ -22,6 +25,7 @@ const projects = [
     description: "A scientific calculator with memory functions, unit conversions, and graphing capabilities.",
   },
   {
+    id: 3,
     title: "E-Commerce Store Clone",
     category: "Full Stack",
     level: "Advanced",
@@ -33,7 +37,7 @@ const projects = [
     image: "/task.webp",
     title: "Task Management System",
     category: "Productivity",
-    difficulty: "Intermediate",
+    level: "Intermediate",
     description: "A Kanban-style task manager with drag-and-drop interface, deadlines, and priority settings.",
   },
   {
@@ -41,7 +45,7 @@ const projects = [
     image: "/socialmedia.jpg",
     title: "Social Media Dashboard",
     category: "Analytics",
-    difficulty: "Advanced",
+    level: "Advanced",
     description: "A comprehensive analytics platform for tracking engagement across social media accounts.",
   },
   {
@@ -49,7 +53,7 @@ const projects = [
     image: "/fitness.png",
     title: "Fitness Tracking App",
     category: "Health & Wellness",
-    difficulty: "Intermediate",
+    level: "Intermediate",
     description: "A personal fitness companion with workout plans, progress tracking, and nutritional guidance.",
   },
 ];
@@ -97,6 +101,7 @@ export default function ProjectLibraryPage() {
       {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project, index) => (
+          <Link href={`/projects/${project.id}`} key={project.id}>
           <div key={index} className="bg-white rounded-xl shadow-sm border overflow-hidden cursor-pointer">
             <Image
               src={project.image}
@@ -111,12 +116,13 @@ export default function ProjectLibraryPage() {
               <p className="text-sm text-gray-600 mt-1">{project.description}</p>
               <div className="flex items-center justify-between mt-4 text-sm text-gray-500">
                 <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">{project.level}</span>
-                <a href="#" className="flex items-center gap-1 hover:underline">
+                <span className="flex items-center gap-1 hover:underline">
                   <FaGithub /> Source code
-                </a>
+                </span>
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

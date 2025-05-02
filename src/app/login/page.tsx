@@ -33,6 +33,9 @@ const LoginPage = () => {
 
     if (formIsValid) {
       console.log("Form submitted:", { email, password });
+
+      setEmail("");
+      setPassword("");
       // 🔐 You can add login logic here (API call etc.)
     }
   };
@@ -60,9 +63,8 @@ const LoginPage = () => {
                   <input
                     type="text"
                     name="email"
-                    className={`bg-gray-50 border ${
-                      errors.email ? "border-red-500" : "border-gray-300"
-                    } text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5`}
+                    className={`bg-gray-50 border ${errors.email ? "border-red-500" : "border-gray-300"
+                      } text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5`}
                     placeholder="name@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -80,9 +82,8 @@ const LoginPage = () => {
                     type="password"
                     name="password"
                     placeholder="••••••••"
-                    className={`bg-gray-50 border ${
-                      errors.password ? "border-red-500" : "border-gray-300"
-                    } text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5`}
+                    className={`bg-gray-50 border ${errors.password ? "border-red-500" : "border-gray-300"
+                      } text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5`}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import herogirl1 from "public/herogirl1.png"
+import { Button } from "./ui/moving-border";
 
 const HeroSection = () => {
   return (
@@ -17,14 +18,14 @@ const HeroSection = () => {
         </p>
         <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-4">
           <Link href={"/internships"}>
-            <button className="px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all cursor-pointer">
+            <Button className="px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all cursor-pointer">
               Explore Internship
-            </button>
+            </Button>
           </Link>
           <Link href={"/courses"}>
-            <button className="px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all cursor-pointer">
+            <Button className="px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all cursor-pointer">
               Explore Course
-            </button>
+            </Button>
           </Link>
         </div>
       </div>

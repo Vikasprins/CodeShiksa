@@ -15,7 +15,7 @@ const topics: Topic[] = [
   { icon: <Music size={40} className="text-indigo-500" />, title: "Graphic Deginer" },
   { icon: <DollarSign size={40} className="text-yellow-500" />, title: "Programming" },
   { icon: <Calculator size={40} className="text-cyan-500" />, title: "SEO Expert" },
-  { icon: <FileText size={40} className="text-orange-500" />, title: "Content Writing" },
+  { icon: <FileText size={40} className="text-orange-500" />, title: "Video Editor" },
 ];
 
 const PopularTopics: React.FC = () => {
