@@ -70,7 +70,7 @@ const projects = [
 
       <div className="mt-8 p-4 bg-yellow-100 rounded-lg">
         <p className="font-semibold mb-2">Download Source Code</p>
-        <p className="text-sm mb-4">Pay ₹49 to access this project's source code.</p>
+        <p className="text-sm mb-4">{`Pay ₹49 to access this project's source code.`}</p>
         <button className="bg-[#045e52] text-white px-4 py-2 rounded hover:bg-[#033e38]">Pay & Download</button>
       </div>
     </div>
