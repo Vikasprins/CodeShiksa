@@ -1,6 +1,6 @@
 import React from 'react'
 // import comming from "public/comming.gif"
-import Image from 'next/image'
+// import Image from 'next/image'
 import PopularCourses from '@/components/PopularCourses'
 
 const page = () => {
