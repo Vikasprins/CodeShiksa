@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo3 from "public/logo3.png"
+import logo1 from "public/logo1.png"
 import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="font-bold text-xl sm:text-2xl text-white">
           {/* Code <span className="text-white">शिक्षा</span> */}
-          <Image src={logo3} alt="logo" height={30} />
+          <Image src={logo1} alt="logo" height={50} />
         </Link>
 
         {/* Hamburger Menu Button (Visible on Mobile) */}
@@ -68,6 +68,9 @@ const Navbar = () => {
             </Link>
             <Link href="/internships" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>
               Internship
+            </Link>
+            <Link href="/courses" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>
+              Courses
             </Link>
             <Link href="/about" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>
               About

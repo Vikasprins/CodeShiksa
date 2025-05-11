@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo1 from "public/logo1.png"
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -8,7 +10,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {/* Company Info */}
           <div>
-            <h3 className="text-lg font-semibold">Code <span className='text-yellow-500'>शिक्षा</span></h3>
+            {/* <h3 className="text-lg font-semibold">Code <span className='text-yellow-500'>शिक्षा</span></h3> */}
+            <Image src={logo1} alt="logo" height={60} />
             <p className="text-gray-400 text-sm mt-2">Empowering developers to build great applications.</p>
           </div>
 

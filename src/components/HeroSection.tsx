@@ -22,9 +22,9 @@ const HeroSection = () => {
               Explore Internship
             </Button>
           </Link>
-          <Link href={"/courses"}>
+          <Link href={"/projects"}>
             <Button className="px-6 py-3 bg-accent text-primary font-semibold rounded-full hover:bg-green-950 hover:text-white transition-all cursor-pointer">
-              Explore Course
+              Explore Projects
             </Button>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface Project {
@@ -70,7 +71,7 @@ const PopularProjects: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {projects.map((project) => (
-          <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer">
+          <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden ">
             <div className="relative w-full h-48">
               <Image src={project.image} alt={project.title} fill style={{ objectFit: "cover" }} />
               <span
@@ -83,15 +84,17 @@ const PopularProjects: React.FC = () => {
                 {project.difficulty}
               </span>
             </div>
+            <Link href={`/projects/${project.id}`}>
             <div className="p-4">
               <span className="text-xs font-semibold uppercase bg-gray-200 px-2 py-1 rounded">{project.category}</span>
               <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
               <p className="text-gray-500 text-sm mt-1">{project.description}</p>
               <div className="mt-4 flex justify-between items-center text-sm text-gray-600">
                 <span>🔗 Source code available</span>
-                <a href="#" className="text-blue-500 hover:underline">View details →</a>
+                <p className="text-blue-500 hover:underline">View details →</p>
               </div>
             </div>
+            </Link>
           </div>
         ))}
       </div>
