@@ -31,9 +31,9 @@ export default function HomePage() {
       <div>
         <WhatYouLookingFor />
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

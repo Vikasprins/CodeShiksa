@@ -4,7 +4,7 @@ export default function ContactPage() {
 
   return (
    
-    <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#045e52] rounded-lg">
+    <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#045e52] rounded-lg mb-6">
       <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4">
         <div>
           <h1 className="text-4xl font-semibold text-white">Get in Touch</h1>

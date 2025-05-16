@@ -1,58 +1,48 @@
-"use client";
 import { FC } from "react";
-import { FaChalkboardTeacher } from "react-icons/fa";
-import { PiStudentFill } from "react-icons/pi";
-import Link from "next/link";
 
 const WhatYouLookingFor: FC = () => {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            What You Looking for?
-          </h2>
-          <p className="text-gray-600 mt-2">
-            Our dynamic educational platform offers you the tools and resources <br />
-            to propel yourself towards a brighter future.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Teacher Card */}
-          <div className="bg-[#045e52] shadow-md rounded-xl p-6 flex flex-col items-start space-y-4">
-            <FaChalkboardTeacher size={40} className="text-white" />
-            <h3 className="text-xl font-semibold text-white">
-              Do You Want Teach Here
-            </h3>
-            <p className="text-white">
-              Our dynamic educational platform offers you the tools supportive community.
-            </p>
-            <Link href="/teach">
-              <button className="mt-2 px-5 py-2 bg-white text-[#045e52] rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
-                Get started
-              </button>
-            </Link>
+     <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Mentorship Card */}
+          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+            <h3 className="text-xl font-bold text-center mb-4">Learn with 1:1 Mentorship</h3>
+            <div className="flex justify-center mb-4">
+              <div className="w-3/4 h-1 bg-white rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <p className="mb-4">Get personalized mentorship from industry experts to fast-track your career.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Interview Coaching</li>
+              <li>Resume Building</li>
+              <li>Hands-on Project Support</li>
+              <li>Personalized Guidance</li>
+              <li>Access to High-quality Recorded Lectures</li>
+            </ul>
           </div>
 
-          {/* Student Card */}
-          <div className="bg-[#045e52] text-white shadow-md rounded-xl p-6 flex flex-col items-start space-y-4">
-            <PiStudentFill size={40} />
-            <h3 className="text-xl font-semibold">
-              Do You Want Learn Here
-            </h3>
-            <p>
-              Our dynamic educational platform offers you the tools supportive community.
-            </p>
-            <Link href="/learn">
-              <button className="mt-2 px-5 py-2 bg-white text-teal-900 font-semibold rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
-                Enroll Now
-              </button>
-            </Link>
+          {/* Certification Card */}
+          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+            <h3 className="text-xl font-bold text-center mb-4">Codeshiksa’s Professional Certification</h3>
+            <div className="flex justify-center mb-4">
+              <div className="w-3/4 h-1 bg-white rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <p className="mb-4">Stand out in the job market with Codeshiksa's verified certification.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Endorsed by a Reputed IT Company</li>
+              <li>Recognized by Hiring Partners</li>
+              <li>Performance-based Certification</li>
+              <li>Exclusive Job & Freelance Opportunities</li>
+              <li>Exclusive Internship Programs</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

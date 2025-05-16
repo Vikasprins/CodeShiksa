@@ -1,41 +1,10 @@
-// 
-// import React from "react";
-// import { Vortex } from "../../components/ui/vortex";
-
-// export default function page() {
-//   return (
-//     <div className="w-full mx-auto   h-[30rem] overflow-hidden">
-//       <Vortex
-//         backgroundColor="black"
-//         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-//       >
-//         <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-//           Internship In Hisar
-//         </h2>
-
-//         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-//           This is chemical burn. It&apos;ll hurt more than you&apos;ve ever been
-//           burned and you&apos;ll have a scar.
-//         </p>
-//         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-//           <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-//             Order now
-//           </button>
-//           <button className="px-4 py-2  text-white ">Watch trailer</button>
-//         </div>
-//       </Vortex>
-//     </div>
-//   );
-// }
-
-
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import internshipgirl3 from 'public/internshipgirl3.png';
 import internshipgirl from 'public/internshipgirl.png';
+import { Accordion } from '@/components/Accordion';
 
 const Page = () => {
   const programs = [
@@ -182,9 +151,11 @@ const Page = () => {
                 </ul>
                 <p className="mt-3 font-medium">Duration: {program.duration}</p>
               </div>
-              <button className="mt-4 w-fit px-4 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
-                Apply Now
-              </button>
+              <Link href={'/contact'}>
+                <button className="mt-4 w-fit px-4 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
+                  Apply Now
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -194,6 +165,122 @@ const Page = () => {
           </button>
         </div>
       </section>
+      <section className="bg-[#045e52] py-16 px-6 sm:px-10 lg:px-20">
+        <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
+          Latest Internships on Code Shiksa
+        </h2>
+
+        <Accordion title="Full Stack Web Development">
+          {/* <p className="font-semibold mb-2">Full Stack</p> */}
+          <ul className="list-none list-inside text-sm space-y-1 text-gray-700">
+            <li>✔ Module 1 - HTML</li>
+            <li>✔ Module 2 - CSS</li>
+            <li>✔ Module 3 - Java Script</li>
+            <li>✔ Module 4 - Git & GitHub</li>
+            <li>✔ Module 5 - Tailwind Css</li>
+            <li>✔ Module 6 - React Js</li>
+            <li>✔ Module 7 - Node Js</li>
+            <li>✔ Module 8 - Express Js</li>
+            <li>✔ Module 9 - MongoDB</li>
+            <li>✔ Module 10 - RestFull API</li>
+            <li>✔ Module 11 - Next Js</li>
+            <li>✔ Module 12 - Deployment</li>
+          </ul>
+        </Accordion>
+
+        <Accordion title="Digital Marketing">
+          {/* <p className="text-gray-600 text-sm">Coming Soon...</p> */}
+          <ul className="list-none list-inside text-sm space-y-1 text-gray-700">
+            <li>✔ Module 1 - Basic Of Marketing & Digital Marketing</li>
+            <li>✔ Module 2 - Website Planning and Creation & Tools</li>
+            <li>✔ Module 3 - Importance Of AI Tool in DM </li>
+            <li>✔ Module 4 - Paid & Organic Marketing</li>
+            <li>✔ Module 5 - Graphic Degigning & Video Editing</li>
+            <li>✔ Module 6 - Social Media Marketing</li>
+            <li>✔ Module 7 - Affiliate Marketing</li>
+          </ul>
+        </Accordion>
+
+        <Accordion title="DevOps">
+          {/* <p className="text-gray-600 text-sm">Coming Soon...</p> */}
+          <ul className="list-none list-inside text-sm space-y-1 text-gray-700">
+            <li>✔ Module 1 - Everything About Linux</li>
+            <li>✔ Module 2 - Shell Scripting</li>
+            <li>✔ Module 3 - Python</li>
+            <li>✔ Module 4 - Git & GitHub</li>
+            <li>✔ Module 5 - Docker</li>
+            <li>✔ Module 6 - Web Server</li>
+            <li>✔ Module 7 - Jenkin</li>
+            <li>✔ Module 8 - CI/CD</li>
+            <li>✔ Module 9 - K8S</li>
+            <li>✔ Module 10 - Terraform</li>
+            <li>✔ Module 11 - Ansible</li>
+            <li>✔ Module 12 - Garfana</li>
+          </ul>
+        </Accordion>
+
+        <Accordion title="Cloud Computing">
+          {/* <p className="text-gray-600 text-sm">Coming Soon...</p> */}
+          <ul className="list-none list-inside text-sm space-y-1 text-gray-700">
+            <li>✔ Module 1 - Everything About Linux</li>
+            <li>✔ Module 2 - Shell Scripting</li>
+            <li>✔ Module 3 - Python</li>
+            <li>✔ Module 4 - Git & GitHub</li>
+            <li>✔ Module 5 - AWS</li>
+            <li>✔ Module 6 - Web Server</li>
+            <li>✔ Module 7 - Lambda</li>
+            <li>✔ Module 8 - Cloud Watch</li>
+            <li>✔ Module 9 - VPC</li>
+          </ul>
+        </Accordion>
+
+        <Accordion title="Graphic Designing">
+          <p className="text-gray-600 text-sm">Coming Soon...</p>
+        </Accordion>
+      </section>
+      <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Mentorship Card */}
+          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+            <h3 className="text-xl font-bold text-center mb-4">Learn with 1:1 Mentorship</h3>
+            <div className="flex justify-center mb-4">
+              <div className="w-3/4 h-1 bg-white rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <p className="mb-4">Get personalized mentorship from industry experts to fast-track your career.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Interview Coaching</li>
+              <li>Resume Building</li>
+              <li>Hands-on Project Support</li>
+              <li>Personalized Guidance</li>
+              <li>Access to High-quality Recorded Lectures</li>
+            </ul>
+          </div>
+
+          {/* Certification Card */}
+          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+            <h3 className="text-xl font-bold text-center mb-4">Codeshiksa’s Professional Certification</h3>
+            <div className="flex justify-center mb-4">
+              <div className="w-3/4 h-1 bg-white rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <p className="mb-4">Stand out in the job market with Codeshiksa's verified certification.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Endorsed by a Reputed IT Company</li>
+              <li>Recognized by Hiring Partners</li>
+              <li>Performance-based Certification</li>
+              <li>Exclusive Job & Freelance Opportunities</li>
+              <li>Exclusive Internship Programs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
     </>
   );
 };
