@@ -1,4 +1,4 @@
-"use client"; // Needed because we’re using useState and form logic
+"use client"; 
 
 import Link from "next/link";
 import React, { useState } from "react";
@@ -42,8 +42,8 @@ const LoginPage = () => {
 
   return (
     <div>
-      <section className="bg-[#045e52] dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <section className="bg-[#045e52] dark:bg-gray-900 ">
+        <div className="min-h-screen flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <Link
             href="/"
             className="flex items-center mb-6 text-3xl font-bold text-white"

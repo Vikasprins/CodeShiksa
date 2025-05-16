@@ -5,7 +5,7 @@ const page = () => {
     return (
         <div>
             <section className="bg-[#045e52] dark:bg-gray-900">
-                <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                <div className="min-h-screen flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                     <Link href="/" className="flex items-center mb-6 text-2xl font-semibold text-white dark:text-white">
                         Code Shiksa
                     </Link>
