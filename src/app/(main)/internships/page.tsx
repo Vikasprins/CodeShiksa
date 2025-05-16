@@ -261,14 +261,14 @@ const Page = () => {
 
           {/* Certification Card */}
           <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-bold text-center mb-4">Codeshiksa’s Professional Certification</h3>
+            <h3 className="text-xl font-bold text-center mb-4">{`Codeshiksa’s Professional Certification`}</h3>
             <div className="flex justify-center mb-4">
               <div className="w-3/4 h-1 bg-white rounded-full relative">
                 <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
                 <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
               </div>
             </div>
-            <p className="mb-4">Stand out in the job market with Codeshiksa's verified certification.</p>
+            <p className="mb-4">{`Stand out in the job market with Codeshiksa's verified certification.`}</p>
             <ul className="list-disc list-inside space-y-1">
               <li>Endorsed by a Reputed IT Company</li>
               <li>Recognized by Hiring Partners</li>

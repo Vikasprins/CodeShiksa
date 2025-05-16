@@ -5,7 +5,6 @@ import React from "react";
 import PopularTopics from "@/components/PopularTopics";
 import PopularCourses from "@/components/PopularCourses";
 import PopularProjects from "@/components/PopularProjects";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MentorSection from "@/components/MentorSection";
 import WhatYouLookingFor from "@/components/WhatYouLookingFor";
