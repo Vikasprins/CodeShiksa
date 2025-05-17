@@ -159,11 +159,11 @@ const Page = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <button className="px-6 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
             Unlock Free
           </button>
-        </div>
+        </div> */}
       </section>
       <section className="bg-[#045e52] py-16 px-6 sm:px-10 lg:px-20">
         <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">

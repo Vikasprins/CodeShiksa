@@ -19,7 +19,7 @@ export default function ContactPage() {
                   data-original="#000000" />
               </svg>
               <a href="javascript:void(0)" className="text-white text-sm ml-4">
-                vikasprins15740@gmail.com
+                codeshiksa@gmail.com
               </a>
             </li>
             <li className="flex items-center">
@@ -43,7 +43,7 @@ export default function ContactPage() {
 
           <ul className="flex mt-12 space-x-4">
             <li className="bg-[#045e52] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="https://www.facebook.com/vikasprins15740/">
+              <a href="https://www.facebook.com/profile.php?id=61575525730510">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='#fff'
                   viewBox="0 0 24 24">
                   <path
@@ -63,7 +63,7 @@ export default function ContactPage() {
               </a>
             </li>
             <li className="bg-[#045e52] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="https://www.instagram.com/vikasprins/">
+              <a href="https://www.instagram.com/codeshiksa/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='#fff'
                   viewBox="0 0 24 24">
                   <path
