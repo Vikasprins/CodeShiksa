@@ -36,6 +36,7 @@ export const login = async (req: Request) => {
         }
    return NextResponse.json({ message: "Login successful", user: { email: user.email } });
   } catch (error: unknown) {
+    console.error("Login error:", error);
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }
 }
