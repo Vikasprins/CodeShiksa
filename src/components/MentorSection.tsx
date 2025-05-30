@@ -19,7 +19,7 @@ const MentorSection = () => {
           {`Hi, I am Vikas Prins, Experienced Software Engineer and Technical Trainer, passionate about DevOps and development, whose vision is to transform everyone's career into IT, irrespective of their background.`}
         </p>
         <Link href="/contact">
-          <button className="mt-6 px-6 py-3 bg-white text-[#045e52] font-semibold rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
+          <button className="mt-6 px-8 py-2 bg-white text-[#045e52] font-semibold rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
             Join ME
           </button>
         </Link>

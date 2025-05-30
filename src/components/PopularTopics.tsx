@@ -21,7 +21,7 @@ const topics: Topic[] = [
 const PopularTopics: React.FC = () => {
   return (
     <section className="py-12 text-center">
-      <h2 className="text-3xl font-bold mb-2">Our Internship Program  </h2>
+      <h2 className="text-3xl font-bold mb-12">Our Internship Program  </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto ">
       {topics.map((topic, index) => (
   <Link

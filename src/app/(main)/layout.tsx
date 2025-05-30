@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Code Shiksa | Projects, Internships & Training in Web Dev, DevOps, AWS, AI and Digital Marketing",
     description: "Get industry-ready with Final Year Projects, career-boosting training in tech, Web Development, DevOps, Digital Marketing, Graphic Designing, and AI courses at Code Shiksa.",
-    images: ["https://yourwebsite.com/twitter-image.jpg"],
+    images: ["https://codeshiksa.com/twitter-image.jpg"],
   },
 };
 
