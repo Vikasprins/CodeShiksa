@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   const { email, password } = await req.json();
 
   try {
-    let user = await User.findOne({ email });
+    const user = await User.findOne({ email });
     if (!user) {
       return NextResponse.json({ error: "Invalid email " }, { status: 401 });
     }
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ message: "Login successful", user: { email: user.email, password: user.password } });
-  } catch (error: any) {
+  } catch (_) {
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }
 }
