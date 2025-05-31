@@ -138,7 +138,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    image: "/calculator.avif",
+    image: "/cal.jpg",
     title: "Advanced Calculator",
     category: "Web Development",
     difficulty: "Intermediate",
