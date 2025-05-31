@@ -173,7 +173,7 @@ const projects = [
     title: "Advanced Calculator",
     category: "Web Development",
     level: "Intermediate",
-    image: "/calculator.avif",
+    image: "/cal.jpg",
     description:
       "A scientific calculator with memory functions, unit conversions, and graphing capabilities.",
   },
@@ -209,7 +209,7 @@ const projects = [
     title: "Fitness Tracking App",
     category: "Health & Wellness",
     level: "Intermediate",
-    image: "/fitness.png",
+    image: "/fitnessApp.webp",
     description:
       "A personal fitness companion with workout plans, progress tracking, and nutritional guidance.",
   },
@@ -218,9 +218,9 @@ const projects = [
 function ProjectCard({ project }: { project: typeof projects[number] }) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-[#045e52] group/card dark:bg-black border border-black/[0.1] dark:border-white/[0.2] w-auto sm:w-[22rem] rounded-xl p-0 transition hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] overflow-hidden">
-        <Link href={`/projects/${project.id}`}>
-          <div>
+      <CardBody className="bg-white group/card dark:bg-black border border-black/[0.1] dark:border-white/[0.2] w-auto sm:w-[22rem] rounded-xl p-0 transition hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] overflow-hidden">
+        <div>
+          <Link href={`/projects/${project.id}`}>
             <CardItem translateZ="100">
               <Image
                 src={project.image}
@@ -238,26 +238,27 @@ function ProjectCard({ project }: { project: typeof projects[number] }) {
               <p className="text-sm text-gray-600 dark:text-gray-300">
                 {project.description}
               </p>
-              <div className="flex items-center justify-between text-xs text-gray-500 mt-3">
-                <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">
-                  {project.level}
-                </span>
-                <Link
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-blue-600 hover:underline"
-                >
-                  <FaGithub /> Source Code
-                </Link>
-              </div>
             </CardItem>
+          </Link>
+          <div className="flex items-center justify-between text-xs text-gray-500 mt-3 px-4 pb-4">
+            <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">
+              {project.level}
+            </span>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-blue-600 hover:underline"
+            >
+              <FaGithub /> Source Code
+            </a>
           </div>
-        </Link>
+        </div>
       </CardBody>
     </CardContainer>
   );
 }
+
 
 export default function ProjectLibraryPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
