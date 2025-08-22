@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import herogirl1 from "public/herogirl1.png"
+import hero from "public/hero-vector.png"
 import { Button } from "./ui/moving-border";
 
 const HeroSection = () => {
@@ -10,8 +10,8 @@ const HeroSection = () => {
       className="bg-[#045e52] text-white min-h-[60vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-10 "
     >
       <div className="text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-accent mb-4">
-          Welcome to <span className="text-highlight">Code शिक्षा</span>
+        <h1 className="text-4xl md:text-5xl font-bold text-accent mb-4">
+          Welcome to <span className="text-highlight text-yellow-300">Code शिक्षा</span>
         </h1>
         <p className="text-lg md:text-xl max-w-xl mx-auto text-muted">
           Learn full-stack web development with MERN Stack and level up your career.
@@ -31,8 +31,11 @@ const HeroSection = () => {
       </div>
       <div>
         <Image
-          src={herogirl1}
+          src={hero}
           alt="girl image"
+          height={500}
+          width={600}
+          
 
         />
       </div>

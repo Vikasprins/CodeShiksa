@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import internshipgirl3 from 'public/internshipgirl3.png';
-import internshipgirl from 'public/internshipgirl.png';
+import internshipverctor from 'public/internshipverctor.png';
 import { Accordion } from '@/components/Accordion';
 
 const Page = () => {
@@ -80,9 +80,9 @@ const Page = () => {
         {/* Right Image */}
         <div className="flex-1 mt-6 md:mt-0 flex justify-center items-center">
           <Image
-            src={internshipgirl}
+            src={internshipverctor}
             alt="girl image"
-            className="w-full max-w-[300px] md:max-w-[400px] h-auto object-contain"
+            className="w-full max-w-[300px] md:max-w-[600px] h-auto object-contain"
           />
         </div>
       </div>

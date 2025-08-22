@@ -28,7 +28,7 @@ const PopularTopics: React.FC = () => {
     key={index}
     href={"/internships"}
   >
-    <div className="p-6 bg-[#045e52] text-white shadow-md rounded-lg flex flex-col items-center hover:bg-white hover:text-black cursor-pointer">
+    <div className="p-6 bg-white text-[#045e52] border-4 border-[#045e52] shadow-md rounded-lg flex flex-col items-center hover:bg-white hover:text-black cursor-pointer">
       {topic.icon}
       <h3 className="mt-4 text-lg font-medium">{topic.title}</h3>
       <p className="text-gray-500 text-sm">Job Ready</p>
