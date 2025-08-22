@@ -183,7 +183,6 @@ export default function MentorSection() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slideChanged(slider) {
-      currentSlide
       setCurrentSlide(slider.track.details.rel);
     },
     slides: { perView: 1, spacing: 15 },
