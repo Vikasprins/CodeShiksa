@@ -193,7 +193,9 @@ export default function MentorSection() {
     const startAutoPlay = () => {
       if (!intervalRef.current && instanceRef.current && !isHovered) {
         intervalRef.current = setInterval(() => {
-          instanceRef.current?.next();
+          if (instanceRef.current) {
+            instanceRef.current.next();
+          }
         }, 5000);
       }
     };
@@ -231,7 +233,7 @@ export default function MentorSection() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  fill
+                  fill={true}
                   className="object-contain rounded-xl"
                 />
               </div>
