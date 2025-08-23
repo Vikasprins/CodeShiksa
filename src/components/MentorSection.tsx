@@ -148,7 +148,7 @@ const team: TeamMember[] = [
   {
     name: 'Vikas Prins',
     role: 'CEO & Mentor',
-    image: '/vikas1.png',
+    image: '/vikas2.png',
     description:
       "Vikas Prins is an accomplished Software Engineer and Technical Trainer with a strong focus on DevOps and modern software development. As the CEO and Mentor at our academy, his mission is to empower individuals from all backgrounds to successfully transition into IT careers, fostering a new generation of skilled and confident tech professionals.",
   },
@@ -176,15 +176,11 @@ const team: TeamMember[] = [
 ];
 
 export default function MentorSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
     slides: { perView: 1, spacing: 15 },
   });
 
