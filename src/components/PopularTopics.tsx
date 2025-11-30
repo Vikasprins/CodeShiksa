@@ -20,15 +20,15 @@ const topics: Topic[] = [
 
 const PopularTopics: React.FC = () => {
   return (
-    <section className="py-12 text-center">
-      <h2 className="text-3xl font-bold mb-12">Our Internship Program  </h2>
+    <section className="py-12 text-center bg-[#e9f7ff]">
+      <h2 className="text-4xl font-bold mb-12">Our Internship Program  </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto ">
       {topics.map((topic, index) => (
   <Link
     key={index}
     href={"/internships"}
   >
-    <div className="p-6 bg-white text-[#045e52] border-4 border-[#045e52] shadow-md rounded-lg flex flex-col items-center hover:bg-white hover:text-black cursor-pointer">
+    <div className="p-6 bg-white text-[#008dc0] border border-[#008dc0] shadow-md rounded-lg flex flex-col items-center hover:bg-[#008dc0] hover:text-white cursor-pointer md:m-0 ml-3 mr-3">
       {topic.icon}
       <h3 className="mt-4 text-lg font-medium">{topic.title}</h3>
       <p className="text-gray-500 text-sm">Job Ready</p>

@@ -61,9 +61,9 @@ const Page = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="w-full h-auto md:h-[400px] bg-[#045e52] flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 py-10">
+      <div className="w-full h-auto md:h-[400px] bg-white flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 py-10">
         {/* Left Text Content */}
-        <div className="flex-1 flex flex-col justify-center items-start text-white space-y-4 text-center md:text-left">
+        <div className="flex-1 flex flex-col justify-center items-start text-black space-y-4 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Internship In Hisar
           </h1>

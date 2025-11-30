@@ -158,8 +158,8 @@ const PopularProjects: React.FC = () => {
   const router = useRouter();
 
   return (
-    <section className="py-12 px-4 bg-[#045e52]">
-      <h2 className="text-3xl font-bold text-center mb-4 text-white">Our Popular Projects</h2>
+    <section className="py-12 px-4 bg-white">
+      <h2 className="text-4xl font-bold text-center mb-4 text-black">Our Popular Projects</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  max-w-7xl mx-auto">
         {projects.map((project) => (
@@ -208,7 +208,7 @@ const PopularProjects: React.FC = () => {
       <div className="text-center mt-10">
         <button
           onClick={() => router.push("/projects")}
-          className="bg-white text-black px-8 py-2 rounded-lg font-semibold hover:bg-green-950 hover:text-white transition cursor-pointer"
+          className="bg-[#008dc0] text-white px-8 py-2 rounded-lg font-semibold hover:bg-white hover:text-[#008dc0] border border-[#008dc0]  transition cursor-pointer"
         >
           Explore All Projects
         </button>

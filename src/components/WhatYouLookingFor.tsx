@@ -5,10 +5,10 @@ const WhatYouLookingFor: FC = () => {
      <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Mentorship Card */}
-          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+          <div className="bg-white text-black rounded-lg p-6 shadow-md border border-[#008dc0]">
             <h3 className="text-xl font-bold text-center mb-4">Learn with 1:1 Mentorship</h3>
             <div className="flex justify-center mb-4">
-              <div className="w-3/4 h-1 bg-white rounded-full relative">
+              <div className="w-3/4 h-1 bg-[#008dc0] rounded-full relative">
                 <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
                 <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
               </div>
@@ -24,10 +24,10 @@ const WhatYouLookingFor: FC = () => {
           </div>
 
           {/* Certification Card */}
-          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+          <div className="bg-white text-black rounded-lg p-6 shadow-md border border-[#008dc0]">
             <h3 className="text-xl font-bold text-center mb-4">{`Codeshiksa’s Professional Certification`}</h3>
             <div className="flex justify-center mb-4">
-              <div className="w-3/4 h-1 bg-white rounded-full relative">
+              <div className="w-3/4 h-1 bg-[#008dc0] rounded-full relative">
                 <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
                 <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
               </div>

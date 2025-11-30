@@ -185,36 +185,36 @@ export default function MentorSection() {
   });
 
   // Auto-play effect
-  useEffect(() => {
-    const startAutoPlay = () => {
-      if (!intervalRef.current && instanceRef.current && !isHovered) {
-        intervalRef.current = setInterval(() => {
-          if (instanceRef.current) {
-            instanceRef.current.next();
-          }
-        }, 5000);
-      }
-    };
+  // useEffect(() => {
+  //   const startAutoPlay = () => {
+  //     if (!intervalRef.current && instanceRef.current && !isHovered) {
+  //       intervalRef.current = setInterval(() => {
+  //         if (instanceRef.current) {
+  //           instanceRef.current.next();
+  //         }
+  //       }, 5000);
+  //     }
+  //   };
 
-    const stopAutoPlay = () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-    };
+  //   const stopAutoPlay = () => {
+  //     if (intervalRef.current) {
+  //       clearInterval(intervalRef.current);
+  //       intervalRef.current = null;
+  //     }
+  //   };
 
-    if (isHovered) {
-      stopAutoPlay();
-    } else {
-      startAutoPlay();
-    }
+  //   if (isHovered) {
+  //     stopAutoPlay();
+  //   } else {
+  //     startAutoPlay();
+  //   }
 
-    return () => stopAutoPlay();
-  }, [isHovered, instanceRef]);
+  //   return () => stopAutoPlay();
+  // }, [isHovered, instanceRef]);
 
   return (
     <section className="bg-white text-black py-16 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
+      <h2 className="text-4xl font-bold text-center mb-10">Meet Our Team</h2>
 
       <div
         ref={sliderRef}
@@ -224,7 +224,7 @@ export default function MentorSection() {
       >
         {team.map((member, idx) => (
           <div key={idx} className="keen-slider__slide flex justify-center items-center">
-            <div className="bg-[#045e52] rounded-[20px] p-6 flex flex-col md:flex-row items-center max-w-4xl shadow-lg">
+            <div className="bg-[#008dc0] rounded-[20px] p-6 flex flex-col md:flex-row items-center max-w-4xl shadow-lg">
               <div className="w-64 h-64 relative flex-shrink-0">
                 <Image
                   src={member.image}
@@ -234,9 +234,9 @@ export default function MentorSection() {
                 />
               </div>
               <div className="mt-6 md:mt-0 md:ml-8 max-w-xl">
-                <h3 className="text-2xl text-white font-semibold">{member.name}</h3>
-                <p className="text-sm text-gray-300 mt-1">{member.role}</p>
-                <p className="text-md text-gray-400 mt-4">{member.description}</p>
+                <h3 className="text-3xl text-white font-semibold">{member.name}</h3>
+                <p className="text-sm text-gray-200 mt-1">{member.role}</p>
+                <p className=" text-gray-200 mt-4">{member.description}</p>
               </div>
             </div>
           </div>

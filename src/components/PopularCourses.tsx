@@ -73,8 +73,8 @@ const courses: Course[] = [
 const PopularCourses: React.FC = () => {
   const router = useRouter();
   return (
-    <section className="py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10">Our Popular Courses</h2>
+    <section className="py-12 px-4 bg-[#e9f7ff]">
+      <h2 className="text-4xl font-bold text-center mb-10">Our Popular Courses</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {courses.map((course) => (
@@ -108,7 +108,7 @@ const PopularCourses: React.FC = () => {
       <div className="text-center mt-8">
         <button
           onClick={() => router.push("/courses")}
-          className="bg-[#045e52] text-white px-6 py-2 rounded-lg font-medium hover:bg-green-950 hover:text-white transition cursor-pointer">
+          className="bg-[#008dc0] text-white px-6 py-2 rounded-lg font-medium hover:bg-white hover:text-[#008dc0] border border-[#008dc0] transition cursor-pointer">
           Explore All Courses
         </button>
       </div>
