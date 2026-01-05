@@ -192,7 +192,7 @@ export default function MentorSection() {
           if (instanceRef.current) {
             instanceRef.current.next();
           }
-        }, 5000);
+        }, 6000);
       }
     };
 
