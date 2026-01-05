@@ -28,7 +28,7 @@ const Navbar = () => {
     } md:flex flex-col md:flex-row items-center gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-slate-900 md:bg-transparent p-4 md:p-0 transition-all duration-300`}
   >
     <div className="flex flex-col md:flex-row gap-4 md:gap-6 mx-auto text-[18px]">
-      <Link href="/" className="hover:text-[#008dc0]" onClick={() => setIsOpen(false)}>Home</Link>
+      <Link href="/" className="hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
       <Link href="/projects" className="hover:text-black" onClick={() => setIsOpen(false)}>Projects</Link>
       <Link href="/internships" className="hover:text-black" onClick={() => setIsOpen(false)}>Internship</Link>
       <Link href="/courses" className="hover:text-black" onClick={() => setIsOpen(false)}>Courses</Link>
@@ -39,8 +39,8 @@ const Navbar = () => {
 
   {/* RIGHT — Login / Profile */}
   <div className="hidden md:flex items-center gap-6 text-[18px]">
-    <Link href="/login" className="hover:text-[#008dc0]">Login</Link>
-    <Link href="/profile" className="hover:text-[#008dc0]">
+    <Link href="/login" >Login</Link>
+    <Link href="/profile">
       <CgProfile size={24} />
     </Link>
   </div>

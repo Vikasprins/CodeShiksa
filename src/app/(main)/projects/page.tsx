@@ -231,7 +231,7 @@ function ProjectCard({ project }: { project: typeof projects[number] }) {
               />
             </CardItem>
             <CardItem translateZ="50" className="p-4 space-y-2 text-neutral-600 dark:text-white">
-              <span className="inline-block text-xs px-2 py-1 bg-[#045e52] text-white rounded-full">
+              <span className="inline-block text-xs px-2 py-1 bg-[#008dc0] text-white rounded-full">
                 {project.category}
               </span>
               <h3 className="text-xl font-semibold">{project.title}</h3>
@@ -288,7 +288,7 @@ export default function ProjectLibraryPage() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-1.5 rounded-full text-sm border font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                 selectedCategory === cat
-                  ? "bg-[#045e52] text-white border-[#045e52]"
+                  ? "bg-[#008dc0] text-white border-[#045e52]"
                   : "bg-white text-black border-[#045e52] hover:bg-[#045e52]/10"
               }`}
             >

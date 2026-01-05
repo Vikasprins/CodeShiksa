@@ -185,32 +185,32 @@ export default function MentorSection() {
   });
 
   // Auto-play effect
-  // useEffect(() => {
-  //   const startAutoPlay = () => {
-  //     if (!intervalRef.current && instanceRef.current && !isHovered) {
-  //       intervalRef.current = setInterval(() => {
-  //         if (instanceRef.current) {
-  //           instanceRef.current.next();
-  //         }
-  //       }, 5000);
-  //     }
-  //   };
+  useEffect(() => {
+    const startAutoPlay = () => {
+      if (!intervalRef.current && instanceRef.current && !isHovered) {
+        intervalRef.current = setInterval(() => {
+          if (instanceRef.current) {
+            instanceRef.current.next();
+          }
+        }, 5000);
+      }
+    };
 
-  //   const stopAutoPlay = () => {
-  //     if (intervalRef.current) {
-  //       clearInterval(intervalRef.current);
-  //       intervalRef.current = null;
-  //     }
-  //   };
+    const stopAutoPlay = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
 
-  //   if (isHovered) {
-  //     stopAutoPlay();
-  //   } else {
-  //     startAutoPlay();
-  //   }
+    if (isHovered) {
+      stopAutoPlay();
+    } else {
+      startAutoPlay();
+    }
 
-  //   return () => stopAutoPlay();
-  // }, [isHovered, instanceRef]);
+    return () => stopAutoPlay();
+  }, [isHovered, instanceRef]);
 
   return (
     <section className="bg-white text-black py-16 px-4">

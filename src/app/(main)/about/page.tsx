@@ -11,7 +11,7 @@ export default function AboutPage() {
                             <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">Building Stronger Communities through Collaboration and Empowerment</h2>
                             <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">Through collaborationperse perspectives and strengths are leveraged to create inclusive environments where everyone has the opportunity to thrive. This approach not only fosters personal growth and achievement but also strengthens the fabric of society.</p>
                         </div>
-                        <button className="sm:w-fit w-full px-3.5 py-2 text-white cursor-pointer bg-[#045e52] hover:bg-green-950 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex ">
+                        <button className="sm:w-fit w-full px-3.5 py-2 text-white cursor-pointer bg-[#008dc0] hover:bg-[#008dc0] transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex ">
                             Get Started
                         </button>
                     </div>

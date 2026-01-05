@@ -2,9 +2,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import internshipgirl3 from 'public/internshipgirl3.png';
-import internshipverctor from 'public/internshipverctor.png';
+import heroImg from 'public/heroImg.webp';
 import { Accordion } from '@/components/Accordion';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Page = () => {
   const programs = [
@@ -61,34 +61,92 @@ const Page = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="w-full h-auto md:h-[400px] bg-white flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 py-10">
+      <section className="relative w-full bg-gradient-to-br from-green-50 via-white to-green-50 overflow-hidden">
+      
+      {/* Background Decorative Blob (Optional for style) */}
+      <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+      <div className="absolute -bottom-32 -left-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 py-16 md:py-24 lg:py-32 flex flex-col-reverse md:flex-row items-center gap-12">
+        
         {/* Left Text Content */}
-        <div className="flex-1 flex flex-col justify-center items-start text-black space-y-4 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Internship In Hisar
+        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left z-10">
+          
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-[#008dc0] text-sm font-semibold mb-6">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#008dc0] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            New Batch Starting Soon
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#008dc0] leading-tight mb-6">
+            Launch Your Career with an <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-black">Internship in Hisar</span>
           </h1>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-            Your First Step Into Tech
-          </h2>
-          <Link href="/contact">
-            <button className="mt-4 px-6 py-2 bg-white text-black rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
-              Join Us
-            </button>
-          </Link>
+          
+          <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+            Stop just learning syntax. Start building real projects. Get mentored by industry experts and take your first confident step into the Tech World.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto px-8 py-4 bg-[#008dc0] text-white font-semibold rounded-xl hover:text-black hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                Apply Now <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
+            
+            <Link href="/courses" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto px-8 py-4 bg-white border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-all duration-300">
+                View Curriculum
+              </button>
+            </Link>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex items-center gap-4 text-sm text-gray-500 font-medium">
+            <div className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4 text-green-600" /> 100% Practical
+            </div>
+            <div className="flex items-center gap-1">
+              <CheckCircle className="w-4 h-4 text-green-600" /> Certificate Included
+            </div>
+          </div>
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1 mt-6 md:mt-0 flex justify-center items-center">
-          <Image
-            src={internshipverctor}
-            alt="girl image"
-            className="w-full max-w-[300px] md:max-w-[600px] h-auto object-contain"
-          />
+        {/* Right Image Content */}
+        <div className="flex-1 relative w-full flex justify-center md:justify-end z-10">
+          {/* Main Image with styling */}
+          <div className="relative rounded-2xl p-2 bg-white/50 backdrop-blur-sm border border-white shadow-2xl transform md:rotate-2 hover:rotate-0 transition-transform duration-500">
+             <Image
+              src={heroImg}
+              alt="Student working on laptop"
+              width={600}
+              height={500}
+              priority
+              className="rounded-xl w-full max-w-[400px] md:max-w-[500px] h-auto object-cover"
+            />
+            
+            {/* Floating Card Element for Depth */}
+            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-gray-100 hidden sm:block animate-bounce-slow">
+              <div className="flex items-center gap-3">
+                <div className="bg-green-100 p-2 rounded-full">
+                  <span className="text-xl">🚀</span>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500">Career Growth</p>
+                  <p className="text-sm font-bold text-gray-900">High Potential</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </div>
+    </section>
 
       {/* Info Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 sm:px-10 lg:px-20 py-12 items-center">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 sm:px-10 lg:px-20 py-12 items-center">
         <div className="flex justify-center">
           <Image
             src={internshipgirl3}
@@ -119,11 +177,11 @@ const Page = () => {
             <li>✅ College students who are pursuing IT or any other degree</li>
           </ul>
 
-          <button className="mt-6 px-6 py-2 bg-[#045e52] text-white rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
+          <button className="mt-6 px-6 py-2 bg-[#008dc0] text-white rounded-lg hover:bg-green-950 hover:text-white cursor-pointer transition">
             Reach Us
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Program Section */}
       <section className="bg-gray-100 py-16 px-6 sm:px-10 lg:px-20">
@@ -134,10 +192,10 @@ const Page = () => {
           {programs.map((program, index) => (
             <div
               key={index}
-              className="bg-white border border-[#045e52] rounded-lg shadow-md p-6 flex flex-col justify-between"
+              className="bg-white border border-[#008dc0] rounded-lg shadow-md p-6 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-bold text-[#045e52] mb-2">
+                <h3 className="text-xl font-bold text-[#008dc0] mb-2">
                   {program.title}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
@@ -152,7 +210,7 @@ const Page = () => {
                 <p className="mt-3 font-medium">Duration: {program.duration}</p>
               </div>
               <Link href={'/contact'}>
-                <button className="mt-4 w-fit px-4 py-2 bg-[#045e52] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
+                <button className="mt-4 w-fit px-4 py-2 bg-[#008dc0] text-white rounded hover:bg-green-950 hover:text-white cursor-pointer transition">
                   Apply Now
                 </button>
               </Link>
@@ -165,7 +223,7 @@ const Page = () => {
           </button>
         </div> */}
       </section>
-      <section className="bg-[#045e52] py-16 px-6 sm:px-10 lg:px-20">
+      <section className="bg-[#008dc0] py-16 px-6 sm:px-10 lg:px-20">
         <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
           Latest Internships on Code Shiksa
         </h2>
@@ -241,12 +299,12 @@ const Page = () => {
       <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Mentorship Card */}
-          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+          <div className=" text-black rounded-lg p-6 shadow-md border border-[#008dc0]">
             <h3 className="text-xl font-bold text-center mb-4">Learn with 1:1 Mentorship</h3>
             <div className="flex justify-center mb-4">
-              <div className="w-3/4 h-1 bg-white rounded-full relative">
-                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
-                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              <div className="w-3/4 h-1 bg-[#008dc0] rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-[#008dc0] rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-[#008dc0] rounded-full"></div>
               </div>
             </div>
             <p className="mb-4">Get personalized mentorship from industry experts to fast-track your career.</p>
@@ -260,12 +318,12 @@ const Page = () => {
           </div>
 
           {/* Certification Card */}
-          <div className="bg-[#045e52] text-white rounded-lg p-6 shadow-md">
+          <div className=" text-black rounded-lg p-6 shadow-md border border-[#008dc0]">
             <h3 className="text-xl font-bold text-center mb-4">{`Codeshiksa’s Professional Certification`}</h3>
             <div className="flex justify-center mb-4">
-              <div className="w-3/4 h-1 bg-white rounded-full relative">
-                <div className="absolute top-0 left-0 h-1 w-3 bg-white rounded-full"></div>
-                <div className="absolute top-0 right-0 h-1 w-3 bg-white rounded-full"></div>
+              <div className="w-3/4 h-1 bg-[#008dc0] rounded-full relative">
+                <div className="absolute top-0 left-0 h-1 w-3 bg-[#008dc0] rounded-full"></div>
+                <div className="absolute top-0 right-0 h-1 w-3 bg-[#008dc0] rounded-full"></div>
               </div>
             </div>
             <p className="mb-4">{`Stand out in the job market with Codeshiksa's verified certification.`}</p>
